@@ -12,7 +12,6 @@
 
     <div class="post-title">
         <h2>{{ post.title }}</h2>
-
         {% if request.user.is_authenticated %}
         <div>
             <a href="{% url 'posts:edit' slug=post.slug %}">Éditer</a>
